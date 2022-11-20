@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tooltip</title>
+</head>
+<style>
+.profile-hover{
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  border-radius:5px;
+  justify-content:center;
+  display: flex;
+  align-items: center;
+}
+.profile-picture{
+  width:50px;
+  height:50px;
+  border-radius: 25px;
+}
+</style>
+<body>
+  <div class="profile-hover">
+    <div><img class="profile-picture" src="channels_profile.jpg"></div>
+    <div>
+      <p>Marques Brownlee</p>
+      <p>15M subscribers</p>
+    </div>
+  </div>
+
+
+  <div class="video-preview">
+    ...
+    <div class="video-info-grid">
+      <div class="channel-picture">
+        <div class="profile-picture-container">
+          <a href="https://youtube.com/c/mkbhd" target="_blank">
+            <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+          </a>
+          <div class="channel-tooltip">
+            <img class="channel-tooltip-picture" src="channel-pictures/channel-1.jpeg">
+            <div>
+              <div class="channel-tooltip-name">
+               Marques Brownlee
+              </div>
+              <div class="channel-tooltip-stats">
+                15M subscribers
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      ...
+    </div>
+  </div>
+
+</body>
+</html>

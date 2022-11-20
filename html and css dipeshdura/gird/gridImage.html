@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GridImage</title>
+</head>
+<style>
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .photo-preview{
+    box-shadow: 0 0 5px rgb(0,0,0,0.3) ;
+    width: 180px;
+    vertical-align: top;
+
+  }
+  .profile-picture{
+    height:170px;
+    width:178px;
+  }
+  
+  .profile-icon{
+    object-fit: cover;
+    border-radius: 50px;
+    width: 30px;
+    vertical-align: middle;
+  }
+  .photo-stats{
+    display: inline;
+    font-size: 14px;
+    color: rgb(96,96,96);
+  }
+  .photo-info{
+    margin-top: 10px;
+    width: 150px;
+  }
+.photo-name{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.add-friend{
+  margin-left: 8px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(85, 85, 230);
+  color: white;
+}
+.photo-grid{
+  display: grid;
+  grid-template-columns: 180px 180px 180px;
+  column-gap: 20px;
+}
+</style>
+<body>
+  <div class="photo-grid">
+    <div class="photo-preview">
+      <div class="profile">
+        <img class="profile-picture" src="div/apple.jpg" >
+      </div>
+      <div class="photo-info-grid">
+        <div class="photo-info">
+          <p class="photo-name">Oliver</p>
+          <img class="profile-icon" src="div/apple.jpg" >
+          <p class="photo-stats">2 mutual friends</p>
+          <div>
+            <button class="add-friend">Add Friend</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="photo-preview">
+      <div class="profile">
+        <img class="profile-picture" src="div/download.png" >
+      </div>
+      <div class="photo-info-grid">
+        <div class="photo-info">
+          <p class="photo-name">Cool dude</p>
+          <img class="profile-icon" src="div/download.png" >
+          <p class="photo-stats">2 mutual friends</p>
+          <div>
+            <button class="add-friend">Add Friend</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="photo-preview">
+      <div class="profile">
+        <img class="profile-picture" src="div/thumbs.png" >
+      </div>
+      <div class="photo-info-grid">
+        <div class="photo-info">
+          <p class="photo-name">thumbs</p>
+          <img class="profile-icon" src="div/thumbs.png" >
+          <p class="photo-stats">2 mutual friends</p>
+          <div>
+            <button class="add-friend">Add Friend</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

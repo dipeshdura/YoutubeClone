@@ -1,0 +1,103 @@
+
+  .thumbnail{
+    width:100%;
+  }
+  .video-title{
+    margin-top: 0;
+    font-weight:500;
+    font-size: 14px;
+    line-height:20px;
+    margin-bottom: 0;
+  }
+  .video-author{
+    font-size: 12px;
+    background-color: rgb(96,96,96,);
+    margin-top:12px;
+    margin-bottom: 0;
+  }
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    columns: 40px;
+    padding-top:60px;
+    padding-left:60px;
+  }
+  @media (max-width:750px){
+    .video-grid{
+      grid-template-columns:1fr 1fr ;
+    }
+  }
+  @media(min-width:751px) and (max-width:999px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media(min-width:1000px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  .video-stats{
+    margin-top: 4px;
+    font-size: 12px;
+    background-color: rgb(96,96,96,);
+  }
+  
+  .video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+  .channel-picture{
+    cursor: pointer;
+    position: relative;
+
+  }
+  .channel-picture .profile-tooltip{
+    font-family: Roboto,Arial;
+   background-color: white;
+   width: 200px;
+   padding: 12px 12px;
+   box-shadow: 2px 3px 10px rgba(0,0,0,0.3);
+    position:absolute;
+    top:55px;
+    z-index:300;
+    border-radius: 6px;
+    opacity:0;
+    pointer-events:none;
+    display: flex;
+    align-items: center;
+    transition:opacity 0.15s;
+  }
+  .channel-picture:hover .profile-tooltip{
+    opacity:1;
+  }
+.profile-tooltip .profile-picture{
+  margin-right: 6px;
+  width:40px;
+}
+.profile-tooltip .video-author{
+  font-size:15px;
+  font-weight:500px;
+}
+  .profile-picture{
+    width: 36px;
+    border-radius: 50px;
+  }
+
+  .thumbnail-row{
+    margin-bottom:8px;
+    position: relative;
+  }
+  .video-time{
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight:500px;
+    background-color: black;
+    color: white;
+    position:absolute;
+    bottom:8px;
+    right:5px;
+    padding:4px 4px;
+    border-radius:3px;
+  }

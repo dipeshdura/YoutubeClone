@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13Execise</title>
+</head>
+<style>
+  div{
+    font-family: Arial;
+  }
+  .first-layer{
+    display: flex;
+    width:600px;
+  }
+  .profile-picture{
+  height:50px;
+  border-radius:25px;
+  object-fit: cover;
+  }
+  .profile-title{
+    width:400px;
+    font-weight:500;
+    margin-top:5px;
+    line-height:22px;
+  }
+  .profile-details{
+    margin-left:15px;
+  }
+  .profile-first-id{
+    font-weight:bold;
+  }
+  .profile-second-id{
+    font-size:14px;
+    color:gray
+  }
+  .layer{
+    margin-top:10px;
+  }
+  .layer{
+    width:400px;
+  }
+  .second-layer{
+    display:flex;
+    border: 2px solid rgb(210, 206, 206);
+    border-radius:15px;
+    align-items: center;
+    overflow:hidden;
+    margin-left: -1px;
+
+  }
+  .column1{
+    background-color: rgb(210, 206, 206);
+    height:90px;
+    margin-left:-1px;
+    width: 100px;
+  }
+  .column2{
+    margin-left:15px;
+    flex: 1;
+  }
+  .youtube{
+    color: gray;
+    margin-bottom: 4px;
+  }
+  .youtube-title{
+    line-height:20px;
+  }
+
+</style>
+<body>
+  <div class="flex-container">
+    <div class="first-layer">
+      <div class="profile-icon">
+        <img class="profile-picture" src="channels_profile.jpg">
+      </div>
+      <div class="profile-details">
+        <div class="profile-id"><span class="profile-first-id">supersimple.dev</span> <span class="profile-second-id">@SuperSimpleDev</span> </div>
+        <div class="profile-title">What is backend web development? A complete overview.New video is up!</div>
+      </div>
+    </div>
+
+    <div class="layer">
+      <div class="second-layer">
+        <div class="column1"></div>
+        <div class="column2">
+          <div class="youtube">youtube.com</div>
+          <div class="youtube-title">Backend web development - a complete overview (2021)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>

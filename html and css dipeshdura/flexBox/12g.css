@@ -1,0 +1,37 @@
+.insta-header{
+  margin-bottom:5px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.profile-picture{
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  border-radius:40px;
+  margin-right: 15px;
+}
+.insta-info{
+  width: 200px;
+}
+.insta-id{
+  font-weight: bold;
+}
+.insta-behave,.insta-famous{
+color:rgb(150,150,150);
+}
+.btn-follow{
+  background-color:  rgb(29, 155, 240);
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding:10px 15px;
+  border-radius:5px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}

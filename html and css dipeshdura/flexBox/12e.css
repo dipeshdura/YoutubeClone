@@ -1,0 +1,48 @@
+*{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p{
+  font-family:Roboto,Arial;
+  
+}
+.container{
+margin-bottom: 20px;
+margin-top: 20px;
+padding-left: 15px;
+padding-right: 15px;
+display:flex;
+flex-direction: column;
+width: 400px;
+box-shadow: 0 0 5px rgb(0,0,0,0.3);
+border-radius: 5px;
+border: 1px solid  rgba(200, 200, 200);
+}
+.nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.text{
+font-weight:500px;
+font-size: 16px;
+}
+.number{
+background-color: rgb(62, 62, 203);
+color: white;
+font-weight: bold;
+border-radius:50px;
+padding:8px;
+
+}
+.home{
+padding-top: 10px;
+}
+.notification{
+padding-top: 12px;
+}
+.messages{
+padding-top: 12px;
+padding-bottom: 10px;
+}
